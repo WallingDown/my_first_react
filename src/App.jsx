@@ -15,6 +15,10 @@ export default class App extends Component {
 		]
 	}
 
+	/**
+	 * 添加一个todo选项
+	 * @param {*} title 
+	 */
 	addTodo = (title) =>{
 		const todo = {id:nanoid(),title:title,completed:false}
 		this.setState({todos:[todo,...this.state.todos]})
